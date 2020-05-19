@@ -82,6 +82,157 @@
       background-color:$blue;
     }
     }
+    .search{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 690px;
+    }
+      
+    .search__shadow{
+            position: relative;
+        &-first{
+            margin: 0 auto;
+            position: absolute;
+            border-radius:6px;
+            height: 40px;
+            width: 1100px;
+            background-color: rgb(255, 255, 255);
+            opacity: 0.502;
+            margin: 0 auto;
+            top: -30px;
+            right: 0;
+            z-index: 1;
+            
+        }
+        &-second{
+            position: absolute;
+            border-radius:6px;
+            width: 1122px;
+            height: 20px;
+            background-color: rgb(255, 255, 255);
+            opacity: 0.302;
+            margin: 0 auto;
+            top: -15px;
+            right: -10px;
+            margin: 0 auto;
+        }
+    }
+    
+        
+      
+    .search__inner{
+        padding-top: 55px;
+        color:#fff;
+        text-align: center;
+        &-img{
+            text-align: left;
+            margin-left: 215px;
+        }
+        &-title{
+            margin:90px 0 30px;
+            font-size: 60px;
+            font-family: 'Quicksand-Regular' , sans-serif;
+            font-weight: 400;
+            line-height: 70px;
+            p{
+                margin: 0;
+                font-family: "Quicksand-Bold";
+                font-weight: 700;
+            }
+        }
+        &-text{
+            font-size: 20px;
+            font-family: "Quicksand-Medium";
+            
+        }
+        &-box{
+            margin-top: 65px;
+            margin-bottom: 100px;
+            .btn-search{
+            
+            padding: 13px 30px;
+            font-size: 16px;
+            border-radius:25px;
+            font-family: "Quicksand-Medium";
+            }
+            .search__btn-view{
+                background-color:#fff;
+                color: $blue;
+            }
+            .search__btn-popular{
+                margin-left: 30px;
+                background-color: #193dc3;
+                border: 1px solid #fff;
+                color: #fff;
+            }
+        }
+        &-form{
+            position: absolute;
+            max-width: 100%;
+            background-color:#fff;
+            box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+            border-radius: 7px;
+            text-align:left ;
+            padding: 65px 40px;
+            input{
+                display: inline-block;
+                border:1px solid #ccc;
+                
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                width: 610px;
+                height: 55px;
+                font-size: 16px;
+                padding-left: 25px;
+                padding-right:60px;
+               
+                &::placeholder{
+                    color:#90a4ae;
+                    font-weight: 500;
+                }
+            }
+            a{
+                position: relative;
+                border:1px solid #ccc;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                width: 200px;
+                margin-left: -4px;
+                font-size: 16px;
+                padding: 14.5px 70px 14px 20px;
+                
+            }
+            a:after{
+                content:'';
+                position: absolute;
+                background-image: url(../images/icons/chevron-down.png);
+                width: 14px;
+                height: 8px;
+                top: 23px;
+                right: 18px;
+                background-repeat: no-repeat;
+            }
+            button{
+                margin-left: 25px;
+                border:none;
+                width: 220px;
+                background-color:$blue;      
+                padding: 19px 50px 19px 50px;
+                border-radius:5px;
+                text-align: center;
+            }
+        }
+
+
+    }
+    
+      
+    
+        
+        
+      
+    
 
 
 
