@@ -362,13 +362,18 @@
         .weekly__resum-categories{
             display: flex;
             justify-content: start;
-            border-bottom: 1px solid red;
+            border-bottom: 1px solid #ccc;
             padding-bottom: 20px;
             .categories-btn{
                 color: #868c96;
                 background-color:#f1f3f6;
                 padding: 8px 12px;
                 border-radius: 30px;
+                transition: all .5s;
+                &:hover{
+                    color: #fff;
+                    background-color: $blue;
+                }
                 & + .categories-btn{
                     margin-left: 7px;
                 }
@@ -414,7 +419,7 @@
         // margin-right:auto ;
     }
     .products{
-        padding: 120px 0;
+        padding: 120px 0 15px;
         background-color: #f6f7fb;
     }
     .products-top{
@@ -514,8 +519,8 @@
         }
         .wordpress,
         .plugin-html{
-            width: 17px;
-            height: 17px;
+            max-width: 20px;
+            height: 20px;
         }
         &-category{
             color:$purple;
@@ -556,9 +561,110 @@
         &-buy{
         margin-left: auto;
         }
-
-
     }
+    .products__bottom-btn{
+        margin-top: 60px;
+        max-width: 100%;
+        text-align: center;
+        button{
+        border:none;
+        padding: 20px 30px;
+        background-color: $blue;
+        cursor: pointer;
+        border-radius:30px;
+        color: #fff;
+        
+        }
+    }
+
+    .followers{
+        padding-bottom: 100px;
+        background-color:#fff;
+        position: relative;
+    }
+    .followers-container{
+    background-color: #eff1f5;
+    padding: 10px;
+    }
+    .followers__top{
+        margin-bottom: 55px;
+    }
+    .followers-inner{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .followers-prev{
+        z-index: 2;
+        right: 100px;
+    }
+    .followers-next{
+        z-index: 1;
+        right: 50px;
+    }
+    
+    .followers-btn{
+        position: absolute;
+        top: -125px;
+        cursor: pointer;
+        border:none;
+        background-color: transparent;
+        outline: none;
+        // margin-right:auto ;
+    }
+    .popular{
+        background-color:#212225;
+        padding: 90px 0;
+        color: #fff;
+    }
+    .popular__inner{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        .popular__item{
+            .popular-img{
+                margin: 0 auto;
+                background-repeat: no-repeat;
+                display: block;
+                background-position: center;
+                background-size: cover;
+                margin-bottom: 40px;
+            }
+            &-case{
+                height: 46px;
+                width: 55px;
+            }
+            &-download{
+                height: 46px;
+                width: 77px;
+            }
+            &-smile{
+                height: 47px;
+                width: 46px;
+            }
+            &-users{
+                height: 46px;
+                width: 60px;
+            }
+            &-content{
+             font-size: 36px;
+             margin-bottom: 10px;
+            }
+            .popular-yellow{
+                color: #feb71d;
+            }
+            .popular-blue{
+                color: #58c9e9;
+            }
+            .popular-green{
+                color:#77de51;
+            }
+            .popular-pink{
+                color:#ff6a6d;
+            }
+        }
+    }
+    
     
         
         
