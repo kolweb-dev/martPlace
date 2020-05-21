@@ -221,12 +221,353 @@
                 padding: 19px 50px 19px 50px;
                 border-radius:5px;
                 text-align: center;
+                color:#fff;
+                cursor: pointer;
             }
         }
 
 
     }
+    .info{
+        padding: 190px 0 145px;
+        background-color: #fff;
+    }
+    .info__inner-box{
+        display: flex;
+        justify-content: center;
+    }
+    .info__item{
+    max-width: 360px;
+    width: 100%;
+    text-align: center;
     
+      padding: 35px 30px;
+      & + .info__item{
+          margin-left: 30px;
+      }
+    &-img{
+        margin: 0 auto;
+        min-height: 135px;
+        max-width: 134px;
+        background-repeat:no-repeat;
+        display: block;
+        background-position: center;
+        background-size:cover;
+        margin-bottom: 35px;
+    }
+    &-title{
+        font-size: 24px;
+        color: #000;
+        margin-bottom: 30px;
+    }
+    &-text{
+        font-size: 16px;
+        line-height: 30px;
+    }
+    &-shadow{
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    }
+    }
+    .weekly{
+        background-color:#eff1f5;
+        padding: 120px 0;
+    }
+    
+    .weekly__featured{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        padding: 40px 30px;
+        background-color:#fff;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        
+        &-btn{
+            width: 110px;
+            min-height: 45px;
+            background-color:$purple;
+            border-radius:20px;
+            display: flexbox;
+            justify-content: space-around;
+            align-items:center;
+            
+        }
+    }
+    .weekly__inner{
+    margin: 50px 0 110px;
+    position: relative;
+    }
+
+    .weekly__box{
+        display: flex;
+        flex-direction: row;
+        height: 450px;
+        margin-bottom: 15px;
+        
+        &-img{
+            min-width: 50%;
+            background-repeat:no-repeat;
+            display: block;
+            background-position: center;
+            background-size:cover;
+        }
+        &-resum{
+            background-color:#fff;
+            padding:50px 50px 20px;
+        }
+        .weekly__resum-title{
+            font-family: "Quicksand-Medium";
+            color: #000;
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        .weekly__resum-user{
+            display: flex;
+            justify-content: start;
+            align-items:center;
+            margin-bottom: 20px;
+            &-img{
+                min-width: 30px;
+                height: 30px;
+                background-repeat:no-repeat;
+                display: block;
+                background-position: center;
+                background-size:cover;
+            }
+            &-name{
+                margin-left: 7px;
+                font-size: 15px;
+                color: #000;
+                font-weight: 400;
+            }
+            &-plugin{
+                min-width: 15px;
+                height: 15px;
+                background-repeat:no-repeat;
+                display: block;
+                background-position: center;
+                background-size:cover;
+                margin-left: 20px;
+            }
+            &-plugin-name{
+                color: $purple;
+                margin-left: 10px;
+            }
+            &-text{
+                font-size: 16px;
+                line-height: 30px;
+                margin-bottom: 20px;
+            }
+        }
+        .weekly__resum-categories{
+            display: flex;
+            justify-content: start;
+            border-bottom: 1px solid red;
+            padding-bottom: 20px;
+            .categories-btn{
+                color: #868c96;
+                background-color:#f1f3f6;
+                padding: 8px 12px;
+                border-radius: 30px;
+                & + .categories-btn{
+                    margin-left: 7px;
+                }
+            }
+        } 
+        .weekly__resum-info{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 15px;
+        
+            .product-rating{
+                 a{
+                    margin-left:50px;
+                }
+                .weekly__resum-price{
+                    padding: 7px 10px;
+                    background-color:$blue;
+                    border-radius:20px;
+                    color: #fff;
+                    font-size: 15px;
+                }
+            }
+        } 
+    
+    }
+    .weekly-prev{
+        z-index: 2;
+        right: 100px;
+    }
+    .weekly-next{
+        z-index: 1;
+        right: 50px;
+    }
+    
+    .weekly-btn{
+        position: absolute;
+        top: -121px;
+        cursor: pointer;
+        border:none;
+        background-color: transparent;
+        outline: none;
+        // margin-right:auto ;
+    }
+    .products{
+        padding: 120px 0;
+        background-color: #f6f7fb;
+    }
+    .products-top{
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 30px;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        background-color:#fff;
+        margin-bottom: 30px;
+        &-filter{
+            font-size: 16px;
+            font-weight: 400;
+            img{
+                margin-left: 20px;
+               transform: translateY(35%);
+            }
+        } 
+    }
+    .products__inner-btn{
+        text-align: center;
+        // background-color:#f1f3f6;
+        background-color:#fff;
+        margin-bottom: 50px;
+        padding: 30px;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        button{
+            padding: 10px 20px;
+            border:none;
+            background-color:#f1f3f6;
+            cursor: pointer;
+            border-radius:20px;
+            & + button{
+                margin-left: 10px;
+            }
+            &.mixitup-control-active{
+                color: #fff;
+                background-color: $blue;
+            }
+        }
+    }
+    .products__inner-box{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .product__item{
+        max-width: 360px;
+        width: 100%;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        margin-bottom: 30px;
+        background-color:#fff;
+        .product__item-img img{
+            min-height: 230px;
+            background-repeat:no-repeat;
+            display:block;
+            background-position:center;
+            background-size:cover;
+        }
+        &-content{
+            padding: 30px 30px 15px;
+        }
+        &-title{
+            font-family: "Quicksand-Medium";
+            font-weight: 500;
+            font-size: 20px;
+            color: #000;
+            margin-bottom: 17px;
+        }
+        &-name{
+            display:flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+        &-user{
+            width: 30px;
+            height: 30px;
+            background-repeat: no-repeat;
+            display: block;
+            background-position: center;
+            background-size: cover; 
+        }
+        &-nik{
+            margin-left:7px;
+            color: #000;
+        }
+        &-plugin{
+            margin-left:20px;
+            width: 15px;
+            height: 20px;
+            background-repeat: no-repeat;
+            display: block;
+            background-position: center;
+            background-size: cover;
+        }
+        .wordpress,
+        .plugin-html{
+            width: 17px;
+            height: 17px;
+        }
+        &-category{
+            color:$purple;
+            margin-left: 7px;
+        }
+        &-text{
+            text-align: center;
+            font-size: 16px;
+            line-height: 25px;
+            padding-bottom: 30px;
+            border-bottom:1px solid #ccc;
+        }
+        &-info{
+            display:flex;
+            justify-content: flex-start;
+            align-items:center;
+            margin-top: 15px;
+        }
+        &-price{
+            
+            color:$blue;
+            padding: 8px 20px;
+            background-color:#e6f1fd;
+            border-radius: 20px;
+        }
+        &-like{
+            margin-left: 15px;
+            img{
+            width: 17px;
+            height: 15px;
+            background-repeat: no-repeat;
+            display: block;
+            background-position: center;
+            background-size: cover;
+            transform: translateY(15%);
+            }
+        }
+        &-buy{
+        margin-left: auto;
+        }
+
+
+    }
+    
+        
+        
+      
+    
+       
+    
+      
+         
       
     
         
