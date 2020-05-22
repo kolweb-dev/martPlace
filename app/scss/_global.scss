@@ -24,10 +24,14 @@ body{
 }
 .container{
     width: 1150px;
-    margin:  auto;
+    margin:0  auto;
     padding: 0 15px;
 }
-
+.container-fluid{
+    width: 1930px;
+    padding: 0 5px;
+    margin: 0 auto;
+}
 
 .title{
         font-size: 30px;

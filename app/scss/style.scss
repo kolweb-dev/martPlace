@@ -664,8 +664,142 @@
             }
         }
     }
+    .martplace{
+        padding: 120px 0;
+        background-color:#fff;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .martplace__top{
+    text-align: center;
+    margin-bottom: 60px;
+        &-title{
+            color:#000;
+            font-size: 36px;
+            font-weight: 400;
+            margin-bottom: 30px;
+            span{
+                color:$blue;
+            }
+        }
+        &-text{
+            font-size: 16px;
+            padding: 0 230px;
+        }
+    }
+    .martplace__inner{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .martplace__item{
+        position: relative;
+        max-width: 360px;
+        width: 100%;
+        padding: 50px 35px;
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        padding:50px 30px;
+        text-align: center;
+        margin-bottom: 30px;
+        span{
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            font-size: 48px;
+            color:#e5eafe;
+        }
+        &-title{
+            font-size: 24px;
+            color: #000;
+            margin-bottom: 30px;
+        }
+        &-text{
+            line-height: 25px;
+        }
+        .martplace-img{
+            
+            margin: 0 auto;
+            background-repeat:no-repeat;
+            display: block;
+            background-position: center;
+            background-size:cover;
+            margin-bottom: 50px;
+            
+        }
+        
+        &-license{
+            height: 60px;
+            width: 75px;
+            
+        }
+        &-quality,
+        &-organized,
+        &-leaf{
+            height: 60px;
+            width: 60px;
+
+        }
+        &-secure{
+            width: 39px;
+            height: 51px;
+        }
+        
+
+    }
+    .shopping__inner{
+        display: flex;
+        justify-content: flex-end;
+        
+        
+    }
+    .shopping__item{
+        
+        padding: 90px 200px;
+        text-align: center;
+        color: #fff;
+        &-img{
+            height: 100%;
+            width: 100%;
+            margin: 0 auto;
+            background-repeat: no-repeat;
+            display: block;
+            background-position: center;
+            background-size:cover;
+            margin-bottom: 45px;
+        }
+        .shopping-start{
+            width: 125px;
+            height: 100px; 
+        }
+        .shopping-sell{
+            width: 100px;
+            height:100px;
+        }
+        &-title{
+            
+            font-size: 36px;
+            margin-bottom:28px ;
+        }
+        &-text{
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 45px;
+        }
+        &-btn{
+            padding: 20px 25px;
+            background-color:#fff;
+            border:none;
+            color: $blue;
+            font-size: 16px;
+            border-radius:30px;
+        }
+    }
+
     
     
+       
+      
         
         
       
