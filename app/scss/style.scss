@@ -887,8 +887,106 @@
     border:1px solid $blue;
     box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
 }
+.news{
+   background-color: #eff1f5; 
+   padding: 120px 0;
+}
+.news__inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.news__item-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    height: 50px;
+    .new__clock,
+    .new__feedback,
+    .new__loock{
+        display: flex;
+        align-items:center;
+        span{
+            margin-left: 5px;
+        }
+    }
+    .new__loock{
+        margin-left: 25px;
+    }
+    .new__feedback{
+        margin-left: auto;
+    }
+}
+.guarantee{
+    padding: 80px ;
+    font-size: 24px;
+    line-height: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.guarantee__inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:0 80px;
+    .guarantee__item{
+        &-img{
+            margin: 0 auto;
+            background-repeat: no-repeat;
+            display: block;
+            background-position: center;
+            background-size:cover;
+            margin-bottom: 30px;
+        }
+        .img-guarantee{
+            height: 120px;
+            width: 150px;
+        }
+        .img-support{
+            height: 117px;
+            width: 155px;
+        }
+        &-text{
+            font-size: 24px;
+            line-height: 25px;
+            .blue-text{
+                color:$blue;
+            }
+            .pink-text{
+                color: $purple;
+            }
+        }
+    }
+}
+.marketplace{
+    padding:  100px 0;
+    color: #fff;
+}
+.marketplace__item{
+    text-align: center;
+    &-title{
+        font-size: 36px;
+        line-height: 37px;
+        margin-bottom: 20px;
+    }
+    &-text{
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 40px;
+    }
+    &-btn{
+        padding:20px 40px;
+        border:none;
+        background-color:#fff;
+        color: $blue;
+        line-height: 16px;
+        border-radius:30px;
+    }
+}
 
 
+  
 
 
     
