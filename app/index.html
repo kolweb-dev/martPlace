@@ -24,12 +24,19 @@
                         <a class="btn header__box-btn" href=" ">Become a Saller</a>
                     </div>
                     <div class="header__box">
-                        <a class="bluebell" href="#"></a>
-                        <a class="massege" href="#"></a>
-                        <a class="basket" href="#"></a>
+                        <a class="bluebell icon-bell-o" href="#">
+                            <span>25</span>
+                        </a>
+                        <a class="massege icon-envelope-o" href="#">
+                            <span>6</span>
+                        </a>
+                        <a class="basket icon-shopping-cart" href="#">
+                            <span>2</span>
+                        </a>
                     </div>
                     <div class="header__box-user">
-                        <a class="header__user-img" href="#"></a>
+                        <a class="header__user-img" href="#"
+                            style="background-image: url(images/content/my_photo.jpg);"></a>
                         <div class="header__user">
                             <a href="#">Taofiq Hakim</a><br>
                             <a class="header__user-money" href="#">$ 136.7</a>
@@ -78,9 +85,9 @@
                     <div class="menu__list-search">
                         <form>
                             <input type="text" placeholder="Search product here..">
-                            <a href="#">
+                            <button type="submit">
                                 <img src="images/list_search.png" alt="">
-                            </a>
+                            </button>
                         </form>
                     </div>
                 </nav>
@@ -117,7 +124,16 @@
                 <div class="search__inner-form">
 
                     <input type="text" placeholder="Search Your Products . . ." required>
-                    <a href="#">All Categories</a>
+
+                    <select name="list1" required>
+                        <option>All Categories</option>
+                        <option>Option</option>
+                        <option>Textarea</option>
+                        <option>Label</option>
+                        <option>Fieldset</option>
+                        <option>Legend</option>
+                    </select>
+
 
                     <button type="submit">
                         Search Now
@@ -139,7 +155,7 @@
             <div class="info__inner">
                 <div class="info__inner-box">
 
-                    <div class="info__item">
+                    <a href="#" class="info__item">
                         <div class="info__item-img" style="background-image: url(images/content/info-reseach.jpg);">
                         </div>
                         <div class="info__item-title">
@@ -151,8 +167,8 @@
                             congue is laoreet elit metus.
                         </div>
 
-                    </div>
-                    <div class="info__item info__item-shadow">
+                    </a>
+                    <a class="info__item info__item-shadow" href="#">
                         <div class="info__item-img" style="background-image: url(images/content/info-reseach.jpg);">
                         </div>
                         <div class="info__item-title">
@@ -164,9 +180,9 @@
                             congue is laoreet elit metus.
                         </div>
 
-                    </div>
+                    </a>
 
-                    <div class="info__item">
+                    <a class="info__item" href="#">
                         <div class="info__item-img" style="background-image: url(images/content/info-reseach.jpg);">
                         </div>
                         <div class="info__item-title">
@@ -178,7 +194,7 @@
                             congue is laoreet elit metus.
                         </div>
 
-                    </div>
+                    </a>
 
 
                 </div>
@@ -210,14 +226,14 @@
                             </div>
                             <div class="weekly__resum-user">
                                 <div class="weekly__resum-user-img"
-                                    style="background-image: url(images/content/weekly-user.png);">
+                                    style="background-image: url(images/content/my_photo.jpg);">
                                 </div>
-                                <div class="weekly__resum-user-name">
+                                <a href="#" class="weekly__resum-user-name">
                                     AazzTech
-                                </div>
-                                <div class="weekly__resum-user-plugin"
-                                    style="background-image:url(images/icons/wordpress.png) ;"></div>
-                                <div class="weekly__resum-user-plugin-name">WordPress</div>
+                                </a>
+                                <a class="weekly__resum-user-plugin"
+                                    style="background-image:url(images/icons/wordpress.png) ;"></a>
+                                <a href="#" class="weekly__resum-user-plugin-name">WordPress</a>
                             </div>
                             <div class="weekly__resum-user-text">
                                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
@@ -233,14 +249,13 @@
                             <div class="weekly__resum-info">
                                 <div class="product-rating">
                                     <div class="weekly__resum-price" style="display: inline-block;">
-                                        $10-$50
+                                        <span>$10 - $50</span>
                                     </div>
-                                    <a class="weekly__resum-like" href="#">
-
-                                        46
+                                    <a class="weekly__resum-like icon-heart-o" href="#">
+                                        <span>46</span>
                                     </a>
-                                    <a class="weekly__resum-buy" href="#">
-                                        634
+                                    <a class="weekly__resum-buy  icon-shopping-cart" href="#">
+                                        <span>634</span>
                                     </a>
                                 </div>
                                 <div class="weekly__resum-star" href="#">
@@ -340,6 +355,7 @@
                     <div class="product__item mix category-wordpress">
                         <a href="#" class="product__item-img">
                             <img src="images/content/product-img.jpg" alt="">
+                            <!-- <img src="images/content/images/content/product-img__animation.png" alt=""> -->
                         </a>
 
                         <div class="product__item-content">
@@ -404,7 +420,7 @@
 
                             <div class="product__item-name">
                                 <div class="product__item-user"
-                                    style="background-image: url(images/content/weekly-user.png);"></div>
+                                    style="background-image: url(images/content/my_photo.jpg)"></div>
 
                                 <a class="product__item-nik" href="#">Theme-Vallye</a>
 
@@ -1203,7 +1219,7 @@
             <div class="reviews__inner">
                 <div class="reviews__item">
                     <div class="reviews__item-user">
-                        <div class="user-img" style="background-image: url(images/user-none.png);">
+                        <div class="user-img" style="background-image: url(images/content/my_photo.jpg);">
                         </div>
                         <div class="user-info">
                             <div class="user-info-name">Taqfiqul Hakim</div>
