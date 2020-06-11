@@ -2716,7 +2716,297 @@ a.basket__btn{
 
 
 //end single-product
-// 100
+// start login-page
+
+.login-breadcrumbs{
+    .breadcrumbs__list{
+        padding-top: 60px;
+        text-align: left;
+    }
+}
+.login-breadcrumbs-title{
+    color: #fff;
+    text-align: left;
+    @include f500;
+    font-size: 30px;
+}
+
+.login-page{
+    background-color:#eff1f5;
+    padding: 70px 0 120px;
+}
+.login-box{
+    max-width: 555px;
+    margin: 0 auto;
+    background-color:#fff;
+    border-radius:5px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+     padding: 50px 0;
+}
+.login-box-title{
+    color: #000;
+    text-align: center;
+    @include f400;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+.login-box-text{
+    text-align: center;
+    padding-bottom: 30px;
+    @include f400;
+    color: #555;
+    font-size: 16px;
+    border-bottom:1px solid #e8ebf0;
+
+}
+.login__page-form{
+    padding: 25px 30px;
+    
+    label{
+        p{
+            font-size: 16px;
+        }
+        input{
+            width: 100%;
+            height: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color:#f4f5f8;
+            border: none;
+            margin-top: 15px;
+            &::placeholder{
+                @include f400;
+                color: #898f96;
+                font-size: 16px;
+                display: block;
+            }
+        }
+    }
+}
+.login__label-pass{
+  p{
+    margin-top: 30px;
+  }
+}
+.login-remember{
+    @include f400;
+    font-size: 16px;
+    color: #555;
+}
+.login__box-link{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.login__box-btn{
+    height: 50px;
+    text-align: center;
+    border:none;
+    background-color:$blue;
+    color: #fff;
+    width: 190px;
+    @include f400;
+    font-size: 15px;
+    border-radius: 30px;
+}
+.login__box-link{
+    display: flex;
+    justify-content: space-between;
+    p{
+        @include f400;
+        font-size: 16px;
+        color: #898f96;
+        a{
+            color: $blue;
+            
+        }
+    }
+}
+  
+
+
+// end login-page
+// start page 404
+.page-404{
+    background-color: #fff;
+    padding: 60px 0;
+}
+.page-404__inner{
+    text-align: center;
+}
+.page-404__image{
+    width: 393px;
+    height: 447px;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+}
+.page-404__title{
+    @include f400;
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 40px;
+}
+.page-404__home{
+    color: #fff;
+    @include f500;
+    font-size: 15px;
+    background-color: $blue;
+    padding: 17px 48px;
+    border-radius:30px;
+}
+
+// end page 404 
+// start contact
+.contact{
+    background-color: $bg;
+}
+.contact-head__title{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    @include f500;
+    padding-top: 100px;
+}
+.contact-head__text{
+    color: #fff;
+    text-align: center;
+    @include f400;
+    font-size: 20px;
+    padding-top: 20px;
+}
+.contact-wrapper{
+    padding: 115px 0;
+}
+.contact-title{
+    color: #000;
+    @include f500;
+    text-align: center;
+    font-size: 36px;
+    a{
+        color: $blue;
+
+    }
+}
+.contact-text{
+    text-align: center;
+    @include f400;
+    padding-top: 25px;
+    padding-bottom:60px;
+    font-size: 16px;
+    max-width: 690px;
+    margin: 0 auto;
+}
+.contact-info{
+    background-color: $bg;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.contact-info__box{
+    width: 360px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    background-color: #fff;
+    padding: 45px 30px;
+    text-align: center;
+    border-radius:5px;
+}
+.contact-image{
+    width: 30px;
+    height: 49px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    margin:0 auto;
+    margin-bottom:40px;
+}
+
+.contact-info__title{
+    @include f500;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 30px;
+}
+.contact-info__text{
+    @include f400;
+    color: #555555;
+    
+}
+.contact-message{
+    background-color:#fff;
+    padding: 50px 0;
+}
+.contact-message__title{
+    @include f500;
+    font-size: 24px;
+    color: #000;
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom:1px solid #e8ebf0;
+}
+.contact-form{
+    padding: 40px 190px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    input{
+        margin-bottom: 30px;
+        width: 360px;
+        height: 50px;
+        border: 1px solid #e7e7e7;
+        padding: 0 20px;
+        color: #9e9e9e;
+        @include f400;
+    }
+    input.contact__input{
+        padding: 0 50px;
+        
+    }
+    textarea{
+        width: 741px;
+        border: 1px solid #e7e7e7;
+        color: #9e9e9e;
+        @include f400;
+        padding: 20px 50px 20px 20px;
+    }
+    button{
+        width: 170px;
+        padding: 15px 5px;
+        text-align: center;
+        color: #fff;
+        @include f400;
+        font-size: 16px;
+        border: none;
+        background-color:$blue;
+        border-radius:30px;
+        margin:0 auto;
+        margin-top: 25px;
+    }
+    
+}
+.contact-map{
+    height: 400px;
+    background-color:#e3e6ec;
+    position: relative;
+}
+.contact-map__image{
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    position: absolute;
+    top: 150px;
+    right: 590px;
+}
+  
+// end contact
+ //30*49 contact-marker.png
+ // 48*39 contact-phone.png
+ //48*37 contact-inbox.png
 
 @import 'media';
 
