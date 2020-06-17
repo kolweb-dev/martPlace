@@ -60,6 +60,7 @@ $(function () {
         return false;
     });
 
+    $('input, select').styler();
 
 
     $('.menu__btn').on('click', function () {
